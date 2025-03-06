@@ -1,4 +1,4 @@
-package com.lp.board.persistence.entity;
+package com.lp.board.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;

@@ -1,6 +1,6 @@
 package com.lp.board.persistence.dao;
 
-import com.lp.board.persistence.entity.AuthorEntity;
+import com.lp.board.model.entity.AuthorEntity;
 
 import java.sql.SQLException;
 

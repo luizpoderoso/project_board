@@ -28,6 +28,4 @@ public class ProjectDTO {
 
     private List<GroupDTO> groups = new ArrayList<>();
 
-    private List<TaskDTO> tasks = new ArrayList<>();
-
 }

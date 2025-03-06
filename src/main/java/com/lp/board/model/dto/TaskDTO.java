@@ -29,7 +29,4 @@ public class TaskDTO {
     @ToString.Exclude
     private List<GroupDTO> groups = new ArrayList<>();
 
-    @ToString.Exclude
-    private ProjectDTO project;
-
 }

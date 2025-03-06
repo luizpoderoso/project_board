@@ -1,7 +1,7 @@
 package com.lp.board.persistence.dao.impl;
 
+import com.lp.board.model.entity.*;
 import com.lp.board.persistence.dao.AuthorDAO;
-import com.lp.board.persistence.entity.*;
 import lombok.RequiredArgsConstructor;
 
 import java.sql.Connection;
@@ -61,6 +61,7 @@ public class AuthorDAOImpl implements AuthorDAO {
         }
         return entity;
     }
+
 
     private List<ContactEntity> getAuthorContacts(ResultSet resultSet) throws SQLException {
         try {

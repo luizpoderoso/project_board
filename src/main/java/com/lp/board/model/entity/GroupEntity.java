@@ -1,4 +1,4 @@
-package com.lp.board.persistence.entity;
+package com.lp.board.model.entity;
 
 import lombok.Data;
 import lombok.ToString;
@@ -6,7 +6,7 @@ import lombok.ToString;
 import java.util.List;
 
 @Data
-public class ProjectEntity {
+public class GroupEntity {
 
     private Long id;
 
@@ -17,9 +17,10 @@ public class ProjectEntity {
     private String description;
 
     @ToString.Exclude
-    private List<AuthorEntity> authors;
+    private ProjectEntity project;
 
-    private List<GroupEntity> groups;
+    @ToString.Exclude
+    private List<AuthorEntity> members;
 
     private List<TaskEntity> tasks;
 
