@@ -21,4 +21,16 @@ public class AuthorRestController {
         return ResponseEntity.ok(dto);
     }
 
+    @GetMapping(path = "/{id}")
+    public ResponseEntity<AuthorDTO> getAuthor(@PathVariable Long id) throws SQLException {
+        var dto = service.getAuthorById(id);
+        return ResponseEntity.ok(dto);
+    }
+
+    @GetMapping(path = "/{id}/details")
+    public ResponseEntity<AuthorDTO> getAuthorWithDetails(@PathVariable Long id) throws SQLException {
+        var dto = service.getAuthorByIdWithDetails(id);
+        return ResponseEntity.ok(dto);
+    }
+
 }
